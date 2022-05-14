@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio 4</title>
+</head>
+<body>
+	<h1>Ejercicio 4</h1>
+	<table>
+		<tr>
+
+			<th>Numero  |</th>
+			<th>  Par o impar?</th>
+		</tr>
+
+		<tr>
+		<tr th:each="n:${Numeros}">
+			<th th:text="${n.num}"></th>
+			<th th:text="${n.par}"></th>
+		</tr>
+
+
+
+
+	</table>
+	<a href="menu">Volver al Menu</a>
+</body>
+</html>
