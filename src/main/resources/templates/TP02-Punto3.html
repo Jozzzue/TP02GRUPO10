@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio 3</title>
+</head>
+<body>
+	<h1>DATOS DEL ALUMNO</h1>
+	<h2>
+		Nombre: <span th:text="${Nombre}"></span>
+	</h2>
+	<h2>
+		Apellido: <span th:text="${Apellido}"></span>
+	</h2>
+		<h2>
+		Libreta: <span th:text="${Libreta}"></span>
+	</h2>
+		<h2>
+		Notas: <span th:text="${Notas}"></span>
+	</h2>
+		<h2>
+		El alumno tiene un promedio de <span th:text="${Promedio}"></span>
+	</h2>
+	<h2>
+		Su mayor nota es <span th:text="${Mayor}"></span>
+	</h2>
+	<a href="menu">Volver al Menu</a>
+</body>
+</html>
