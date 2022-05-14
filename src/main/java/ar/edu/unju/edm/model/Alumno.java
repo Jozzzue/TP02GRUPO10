@@ -1,5 +1,7 @@
 package ar.edu.unju.edm.model;
 
+import java.util.Arrays;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class Alumno {
 	private String Nombre;
 	private String Apellido;
-	private String LibretaUni;
+	int LibretaUni;
 	private double Notas[];
 
 	public double[] getNotas(){
@@ -22,11 +24,11 @@ public class Alumno {
 	    this.Notas = notas;
 	}
 
-	public String getLibretaUni() {
+	public int getLibretaUni() {
 		return LibretaUni;
 	}
 
-	public void setLibretaUni(String libretaUni) {
+	public void setLibretaUni(int libretaUni) {
 		LibretaUni = libretaUni;
 	}
 
@@ -81,10 +83,24 @@ public class Alumno {
 		return Apellido;
 	}
 	
-	public String libretaAlumno() {
+	public int libretaAlumno() {
 		return LibretaUni;
 	}
 
 	public Alumno() {
 	}
+	
+	public String getStringOfGrades() { // para facilitar la visualizacion en HTML
+		String result="";
+		result=Arrays.toString(Notas);
+		return result;
+	}
+	// metodos sobrecargados
+		public Alumno(String Nombre, String Apellido, int LibretaUni, double Notas[]) {
+			super();
+			this.Nombre = Nombre;
+			this.Apellido = Apellido;
+			this.LibretaUni = LibretaUni;
+	        this.Notas = Notas;
+		}
 }
