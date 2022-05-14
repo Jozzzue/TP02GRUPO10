@@ -15,11 +15,6 @@ import ar.edu.unju.edm.model.Alumno;
 
 public class AlumnoController {
 
-	@GetMapping({"/menu","index","/"})
-	public String mostrarMenu() {
-		return "menu";
-	}
-
 	@GetMapping("/resolverAlumnoP3")
 
 	public String getAlumnoPage(Model model) {
