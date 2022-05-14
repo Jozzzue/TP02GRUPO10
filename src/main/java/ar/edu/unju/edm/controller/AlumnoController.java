@@ -31,7 +31,7 @@ public class AlumnoController {
 		zAlumno.setNotas(notas);
 		zAlumno.setNombre("Leandro");
 		zAlumno.setApellido("Rufino");
-		zAlumno.setLibretaUni("EDM");
+		zAlumno.setLibretaUni(1);
 		
 		model.addAttribute("Nombre", zAlumno.getNombre());
 		model.addAttribute("Apellido", zAlumno.getApellido());
