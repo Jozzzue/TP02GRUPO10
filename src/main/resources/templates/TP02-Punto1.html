@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicio 1</title>
+</head>
+<body>
+	<h1>DATOS DE LA PERSONA</h1>
+	<h2>
+		Nombre: <span th:text="${pNombre}"></span>
+	</h2>
+	<h2>
+		Fecha de Nacimiento: <span th:text="${pNac}"></span>
+	</h2>
+		<h2>
+		Edad: <span th:text="${pEdad}"></span>
+	</h2>
+			<h2>
+		Signo del Zodiaco: <span th:text="${pSigno}"></span>
+	</h2>
+		<h2>
+		Estacion del año: <span th:text="${pEstacion}"></span>
+	</h2>
+
+	<a href="menu">Volver al Menu</a>
+</body>
+</html>
