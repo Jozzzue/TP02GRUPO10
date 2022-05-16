@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio 2</title>
+</head>
+<body>
+	<h1>Apartado b.6</h1>
+	<h2>Fecha 1: <span th:text="${d1}"></span></h2>
+	<h2>Fecha 2: <span th:text="${d2}"></span></h2>
+	<h2>Fecha 1 MAS 365 dias: <span th:text="${Punto2b6.formatearFecha(Punto2b6.getFecha1())}"></span></h2>
+	<h2>Fecha 2 MENOS 6 meses: <span th:text="${Punto2b6.formatearFecha(Punto2b6.getFecha2())}"></span></h2>
+	
+	<h2><span th:text="${Punto2b5_1}"></span></h2>
+	<br><br>
+	
+	<h2><a href="/mostrarPunto2_b2_b4?">Apartados b.2, b.4</a></h2>
+	<a href="menu">Volver al Menu</a>
+</body>
+</html>
