@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ejercicio 2</title>
+</head>
+<body>
+	<h1>Apartado b.5</h1>
+	<h2>Fecha de Nacimiento: <span th:text="${Punto2b5.formatearFecha(Punto2b5.getFecha1())}"></span></h2>
+	<h2>Fecha Actual: <span th:text="${Punto2b5.formatearFecha(Punto2b5.getFecha2())}"></span></h2>
+	<h2><span th:text="${Punto2b5_1}"></span></h2>
+	<br><br>
+	
+	<h2><a href="/mostrarPunto2_b2_b4?">Apartados b.2, b.4</a></h2>
+	<h2><a href="/mostrarPunto2b6?dat1=11/07/1994&dat2=05/11/2010">Apartado b.6</a></h2>
+	<a href="menu">Volver al Menu</a>
+</body>
+</html>
